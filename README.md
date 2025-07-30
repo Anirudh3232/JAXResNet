@@ -60,6 +60,19 @@ python train/train_resnet.py --config configs/train_config.yaml
 Run evaluation:
 python train/evaluate.py --checkpoint path/to/model_checkpoint
 
+### Visualizing Training Results
+
+After training, generate visualizations of loss and accuracy curves using Matplotlib. This helps analyze model performance, detect overfitting, and interpret results.
+
+Run the visualization script (assumes metrics are collected or logs are available):
+python Visualize.py
+
+This script produces plots like training curves (loss and accuracy over epochs) and saves them as `training_curves.png`. For example:
+- Loss curves show how errors decrease during training.
+- Accuracy curves track classification performance on train and test sets.
+
+Dependencies: Ensure Matplotlib is installed (included in `requirements.txt`).
+
 
 
 ## Git Best Practices for this Project
